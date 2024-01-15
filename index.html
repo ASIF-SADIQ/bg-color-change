@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="box">
+        <div id="circle">
+            <div id="bounceball"></div>
+        </div>
+    </div>
+>
+    
+<script>
+function changeBG(){
+    let r = Math.floor(Math.random()*225)
+    let g = Math.floor(Math.random()*255)
+    let b = Math.floor(Math.random()*255)
+    document.body.style.backgroundColor = "rgba("+ r +","+ g +","+ b +")"
+}
+setInterval(changeBG ,500);
+</script>
+    
+</body>
+</html>
